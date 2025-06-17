@@ -1,5 +1,16 @@
 {
-    "name": "toto",
-    "routeController" : "./Controllers/TotoController.php",
-    "id": true
+    "toto": 
+    {  
+        "routeController" : "./Controllers/TotoController.php",
+        "id": true,
+        "className": "TotoController"
+    },
+    "user":
+    {
+        "routeController": "./Controllers/UserController.php",
+        "id": false,
+        "className": "UserController"
+    }
+
+
 }

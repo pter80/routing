@@ -21,9 +21,13 @@ class Routes
             throw new Exception("Erreur JSON : " . json_last_error_msg());
         }
     
-        $this->routes=$json;
+        $this->routes=$donnees;
     }
     public function getRoutes() {
         return $this->routes;
     }
+    public function getRoute($routeName) {
+        return $this->routes[$routeName];
+    }
+
 }
