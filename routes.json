@@ -1,0 +1,5 @@
+{
+    "name": "toto",
+    "routeController" : "./Controllers/TotoController.php",
+    "id": true
+}
