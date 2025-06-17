@@ -3,13 +3,15 @@
     {  
         "routeController" : "./Controllers/TotoController.php",
         "id": true,
+        "idPos": 4,
         "className": "TotoController"
     },
     "user":
     {
         "routeController": "./Controllers/UserController.php",
         "id": false,
-        "className": "UserController"
+        "className": "UserController",
+        "targetPos": 4 
     }
 
 

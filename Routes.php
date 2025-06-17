@@ -22,9 +22,27 @@ class Routes
         }
     
         $this->routes=$donnees;
+        $this->checkIds();
+        $this->checkTargets();
     }
     public function getRoutes() {
         return $this->routes;
+    }
+    public function checkIds() {
+        foreach ($this->routes as $routeName => $route) {
+            if ($route["id"]) {
+                return $route["idPos"];
+            }
+            else $this->routes[$routeName]["idPos"]=null;
+        }
+    }
+    public function checkTargets() {
+        foreach ($this->routes as $routeName => $route) {
+            if ($route["targetPos"]) {
+                return $route["targetPos"];
+            }
+            else $this->routes[$routeName]["targetPos"]=null;
+        }
     }
     public function getRoute($routeName) {
         return $this->routes[$routeName];
